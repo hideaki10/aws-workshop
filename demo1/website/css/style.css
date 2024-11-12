@@ -1,0 +1,140 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+.container {
+    max-width: 1160px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+/* ヘッダー */
+.area_top_view {
+    background-color: #FB8609;
+}
+
+.area_top_view > .container {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.area_top_view .ttl {
+    color: #fff;
+    font: 800 50px/1em 'noto sans japanese', sans-serif;
+    letter-spacing: .04em;
+    margin: 20px 0 0;
+    padding: 0 0 0 40px;
+    position: relative;
+}
+
+/* ボディ全体 */
+
+[class*="area_home"] {
+    padding: 80px 0;
+}
+
+.bg_black {
+    color: white;
+    background-color: black;
+}
+
+img {
+    width: 100%;
+}
+
+.about_img {
+    text-align: center;
+}
+
+.about_img > img {
+    width: 70%;
+}
+
+/* コンテンツ本文 */
+.body_head {
+    margin: 0 0 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.body_head .ttl {
+    font: 600 40px/1em 'noto sans japanese', sans-serif;
+    padding: 0 0 15px;
+    position: relative;
+}
+
+.body_head .ttl::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #FB8609;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* 2分割レイアウト */
+.layout_2_div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 0 50px;
+}
+
+.layout_2_div > div {
+    width: 50%;
+}
+
+.text_home .ttl {
+    font: 450 32px/1.7em 'noto sans japanese', sans-serif;
+    margin: 0 0 40px;
+}
+
+.text_home .description {
+    font: 300 20px/1.6em 'noto sans japanese', sans-serif;
+}
+
+/* コンテンツ説明レイアウト */
+.list_contents {
+    font: 300 20px/1.6em 'noto sans japanese', sans-serif;
+}
+
+.list_contents > ul li {
+    position: relative;
+    list-style: none;
+    line-height: 2em;
+}
+
+.list_contents > ul li::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: .5em;
+    left: -2em;
+    width: 12px;
+    height: 6px;
+    border-left: 3px solid #FB8609;
+    border-bottom: 3px solid #FB8609;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/* 4分割レイアウト */
+.layout_4_div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.layout_4_div > div {
+    width: 25%;
+}
+
+.text_howto .ttl {
+    text-align: center;
+    font: 450 25px/1.7em 'noto sans japanese', sans-serif;
+}
+
