@@ -8,12 +8,6 @@ export class CloudfrontS3Stack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    // The code that defines your stack goes here
-
-    // example resource
-    // const queue = new sqs.Queue(this, 'Demo1Queue', {
-    //   visibilityTimeout: cdk.Duration.seconds(300)
-    // });
     const cloudFrontS3 = new CloudFrontToS3(this, 'WebsiteDistribution', {
       cloudFrontDistributionProps: {
         defaultBehavior: {

@@ -1,14 +1,13 @@
-# Welcome to your CDK TypeScript project
+# S3 + CloudFront 静的ウェブサイトホスティング
 
-This is a blank project for CDK development with TypeScript.
+## アーキテクチャ
+![アーキテクチャ図](./arch.png)
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## 概要
+[AWS Workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/a9b0eefd-f429-4859-9881-ce3a7f1a4e5f/ja-JP/step1-webhosting)を参照してWEBサイトをホスティングしますが、WorkshopではConsoleで操作してますが、CDKで構築します。
 
-## Useful commands
+### 主な機能
+- CloudFrontによるコンテンツのグローバル配信
+- S3による静的コンテンツのホスティング
+- Origin Access Control (OAC)によるセキュアなアクセス制御
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
