@@ -1,0 +1,9 @@
+{
+    "name": "demo-lambda",
+    "version": "1.0.0",
+    "description": "Demo Lambda Function",
+    "main": "index.js",
+    "dependencies": {
+        "aws-sdk": "^2.1510.0"
+    }
+}
